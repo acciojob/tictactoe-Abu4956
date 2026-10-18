@@ -1,1 +1,86 @@
 /*  your css code here. If applicable */
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f6fa;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    margin: 0;
+}
+
+.container {
+    width: 350px;
+    max-width: 90%;
+    text-align: center;
+}
+
+h1 {
+    color: #222;
+    margin-bottom: 20px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    padding: 12px 25px;
+    cursor: pointer;
+    background: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #555;
+}
+
+.message {
+    margin: 20px 0;
+    font-size: 18px;
+    font-weight: bold;
+    min-height: 22px;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+}
+
+.cell {
+    height: 100px;
+    background: white;
+    border: 2px solid #333;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.cell:hover {
+    background: #e9e9e9;
+}
+
+.hidden {
+    display: none;
+}
+
+@media (max-width: 400px) {
+    .cell {
+        height: 85px;
+    }
+}
